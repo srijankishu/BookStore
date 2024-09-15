@@ -9,7 +9,7 @@ const Course = () => {
   useEffect(() =>{
     const getBook = async () => {
     try{
-      const res = await axios.get('http://localhost:4001/book');
+      const res = await axios.get('http://192.168.1.12:4001/book');
     
       setbook(res.data);
 
